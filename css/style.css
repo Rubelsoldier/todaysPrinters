@@ -1,0 +1,801 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||       MASTER STYLESHEET FOR Printify             ||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles 
+* 2. miscelnious styles 
+* 3. header styles 
+* 4. banner styles 
+* 5. welcome styles 
+* 6. what we do styles 
+* 7. brand styles 
+* 8. footer subscribe styles 
+* 9. footer styles 
+* 10. footer bottom styles 
+* 11. recent project styles 
+* 12. cta styles 
+* 13. testimonials styles 
+* 14. we belive carousel styles 
+* 15. faq section styles 
+* 16. team styles 
+* 17. services styles 
+* 18. video box styles 
+* 19. video box styles 
+* 20. contact styles 
+* 21. page title styles 
+* 22. about styles 
+* 23. blog styles 
+* 24. error 404 styles 
+* 25. pricing styles 
+* 26. sidebar styles 
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+/************************** 
+* 1. imported styles 
+***************************/
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(bootstrap.min.css);
+@import url(bootstrap-select.min.css);
+@import url(owl.carousel.css);
+@import url(owl.theme.default.min.css);
+@import url(nouislider.css);
+@import url(nouislider.pips.css);
+@import url(jquery.bootstrap-touchspin.css);
+@import url(magnific-popup.css);
+@import url(animate.min.css);
+@import url(hover-min.css);
+@import url(../plugins/fontawesome-5/css/fontawesome-all.min.css);
+@import url(../plugins/icofont/css/icofont.css);
+@import url(../plugins/printify-icon/style.css);
+/************************** 
+* 2. miscelnious styles 
+***************************/
+body {
+  font-family: 'Rubik';
+  color: #757575;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.thm-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.sec-pad {
+  padding: 120px 0;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.gray-bg {
+  background: #F4F9FD;
+}
+
+.thm-btn {
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  background: #FF4328;
+  border-radius: 35px;
+  color: #fff;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 18px 69px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.thm-btn:hover {
+  background: #fff;
+  color: #FF4328;
+}
+.thm-btn.yellow-bg {
+  background: #FEC931;
+  color: #212121;
+}
+.thm-btn.yellow-bg:hover {
+  background: #FF4328;
+  color: #fff;
+}
+
+.sec-title {
+  margin-top: -8px;
+  margin-bottom: 55px;
+}
+.sec-title span {
+  font-family: 'Pacifico';
+  color: #FF4328;
+  font-size: 20px;
+}
+.sec-title h3 {
+  margin: 0;
+  color: #212121;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.sec-title p {
+  color: #757575;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #FF4328;
+  color: #fff;
+  font-size: 17px;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  -webkit-box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.scroll-to-top:hover {
+  background: #FEC931;
+  color: #212121;
+}
+
+/*
+****
+only add this classto body
+if preloader is on
+other wise REMOVE IT.
+****
+*/
+
+/************************** 
+* 3. header styles 
+***************************/
+.header-navigation {
+  background-color: transparent;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+.header-navigation .thm-container {
+  max-width: 100%;
+  background: transparent;
+  padding: 0 40px;
+  position: relative;
+}
+.header-navigation .thm-container .navbar-header {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header-navigation .thm-container .navbar-brand {
+  height: auto;
+  padding: 0px 0;
+}
+.header-navigation .thm-container .main-navigation {
+  text-align: center;
+  padding: 0;
+}
+.header-navigation .thm-container .right-side-box {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header-navigation .thm-container .right-side-box .social a {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 59px;
+  text-align: center;
+  line-height: 59px;
+}
+.header-navigation .thm-container .right-side-box .social a + a {
+  margin-left: 10px;
+}
+.header-navigation .thm-container .right-side-box .social a.fa-twitter {
+  background: #FEC931;
+}
+.header-navigation .thm-container .right-side-box .social a.fa-facebook-f {
+  background: #2884C6;
+}
+.header-navigation .thm-container .right-side-box .social a.fa-pinterest {
+  background: #212121;
+}
+.header-navigation .thm-container .right-side-box .social a.fa-youtube {
+  background: #FF4328;
+}
+.header-navigation ul.navigation-box {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-navigation ul.navigation-box li a .sub-nav-toggler {
+  display: none;
+}
+.header-navigation ul.navigation-box > li {
+  position: relative;
+  padding: 48.5px 0;
+  display: inline-block;
+}
+.header-navigation ul.navigation-box > li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.header-navigation ul.navigation-box > li:first-child:before {
+  display: none;
+}
+.header-navigation ul.navigation-box > li + li {
+  margin-left: 0px;
+}
+.header-navigation ul.navigation-box > li.active > a,
+.header-navigation ul.navigation-box > li.current > a,
+.header-navigation ul.navigation-box > li > a:active,
+.header-navigation ul.navigation-box > li > a:focus,
+.header-navigation ul.navigation-box > li:hover > a {
+  color: #2884C6;
+}
+.header-navigation ul.navigation-box > li > a {
+  padding: 0;
+  color: #757575;
+  font-size: 18px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  font-weight: 500;
+  display: inline-block;
+}
+.header-navigation ul.navigation-box > li > ul.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100000;
+  float: left;
+  min-width: 239px;
+  padding: 15px 20px;
+  text-align: left;
+  list-style: none;
+  background-color: #FF4328;
+  background-clip: padding-box;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .4s ease, visibility .4s ease;
+  transition: opacity .4s ease, visibility .4s ease;
+}
+.header-navigation ul.navigation-box > li > ul.sub-menu.right-align {
+  left: auto;
+  right: 0;
+}
+.header-navigation ul.navigation-box > li:hover > ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header-navigation ul.navigation-box > li > ul.sub-menu > li {
+  display: block;
+  position: relative;
+}
+.header-navigation ul.navigation-box > li > ul.sub-menu > li > a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 11.5px 0;
+  display: block;
+  line-height: 26px;
+  padding-left: 27px;
+  white-space: nowrap;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.header-navigation ul.navigation-box > li > .sub-menu li:hover > a {
+  background: #FE553D;
+  color: #fff;
+  position: relative;
+}
+.header-navigation ul.navigation-box > li > .sub-menu > li > ul.sub-menu {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  z-index: 100000;
+  float: left;
+  min-width: 239px;
+  padding: 15px 20px;
+  text-align: left;
+  list-style: none;
+  background-color: #FF4328;
+  background-clip: padding-box;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .4s ease, visibility .4s ease;
+  transition: opacity .4s ease, visibility .4s ease;
+}
+.header-navigation ul.navigation-box > li > .sub-menu > li:hover > ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header-navigation ul.navigation-box > li > .sub-menu > li > ul.sub-menu > li {
+  display: block;
+  position: relative;
+}
+.header-navigation ul.navigation-box > li > .sub-menu > li > ul.sub-menu > li > a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 11.5px 0;
+  display: block;
+  line-height: 26px;
+  padding-left: 27px;
+  white-space: nowrap;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.header-navigation ul.navigation-box > li > .sub-menu > li > .sub-menu li:hover > a {
+  background: #FE553D;
+  color: #fff;
+  position: relative;
+}
+.header-navigation.stricky-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
+}
+.header-navigation.stricky-fixed .thm-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.header-navigation.stricky-fixed .thm-container .navbar-brand {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.header-navigation.stricky-fixed ul.navigation-box > li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/************************** 
+* 4. banner styles 
+***************************/
+
+
+/*my made `ul` `style` for making menu Subitems looking great*/
+ul {
+  margin-top: 4px;
+}
+
+.my-4 {
+  margin-top: 0px !important;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+/*carousel border*/
+
+.carousel {
+  border-top:10px solid #5F9EA0;
+}
+
+.carousel img{
+  /*border-right: 5px solid black;*/
+
+border-width: 5px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#5F9EA0), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#5F9EA0, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#5F9EA0, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#5F9EA0, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #5F9EA0, rgba(0, 0, 0, 0)) 1 100%;
+
+}
+
+
+/*****
+==============services.html page's stylers=====================
+*****/
+.content {
+  overflow: hidden;
+}
+
+ul.services-list {
+  list-style: none;
+  color: #4A4A4A;
+  font-family: "Trebuchet MS";
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+ul.services-list li {
+  border-bottom: 1px solid #ED9101;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+ul.services-list li img {
+   
+    display: block;
+    float: left;
+    padding-top: 20px;
+}
+
+ul.services-list li div {
+    display: block;
+    float: left;
+    padding: 15px 20px 0;
+    text-align: justify;
+    width: 750px;
+}
+
+ul.services-list li h2 {
+    padding-bottom: 10px;
+    color: #ED9101;
+}
+
+
+ul.services-list li p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    ul.services-list li img {
+    float: none;
+    position: relative;
+    margin: 0 auto;   
+    }
+}
+
+
+/*Service page, building and finishing*/
+
+ul.services-list li .binding-cat {
+    float: left;
+    list-style: none;
+    width: 236px;
+}
+
+ul.services-list li ul li {
+    background: url(../images/bullet.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    border: medium none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7em;
+    list-style: none outside none;
+    padding: 0 0 0 10px;
+}
+
+
+
+/****
+
+=============Products page stylesheet==========
+
+****/
+
+
+  .products-content-wrapper {
+    /*margin-top: -75px;*/
+    height: auto;
+  }
+
+  .products-container-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px 0;
+    padding-top: 25px;
+    padding-bottom: 0;
+    float: none;
+    overflow: hidden;
+  }
+
+
+  .entry-title {
+    color: rgb(1, 114, 225);
+    border-bottom: 1px solid rgb(118, 171, 223);
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-size: 24px;
+
+  }
+
+  .image-left {
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .cats {
+    float: left;
+    width: 316px;
+    background: url(../images/cat-bg.png) center bottom no-repeat rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(191, 217, 242);
+    border-image: initial;
+  }
+
+
+  .content {
+    padding-top: 20px;
+    overflow: hidden;
+  }
+
+
+  .cats h3 {
+    color: #0066CC;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .cats p {
+    padding: 5px 5px 0 20px;
+  }
+
+
+  .content p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: .7em;
+    padding-bottom: 20px;
+  }
+
+  .cats a {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+    background: url(../images/cat-arrow.png) no-repeat left 5px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+  }
+
+
+  .attachment-post-thumbnail {
+    float: left;
+    padding-right: 20px;
+  }
+
+
+ .cats a:hover {
+    color: #0066CC;
+  }
+
+
+@media only screen and (max-width: 991px) {
+    /* For mobile phones: */
+    .image-left {
+      display : none;
+      
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .image-left {
+      display : none;      
+    }
+
+    .products-container-wrapper {
+      padding-left: 20%;
+    }
+
+}
+
+
+/*
+=====================
+SERVICE STYLE
+=====================
+*/
+
+.service-style-one {
+    background: #F5F6FA;
+    position: relative;
+}
+
+.sec-pad {
+    padding: 120px 0;
+}
+
+.service-style-one img.background-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.service-style-one .service-content {
+    padding-right: 60px;
+}
+
+.service-style-one .service-content .title {
+    margin-bottom: 40px;
+}
+
+.service-style-one .service-content .title span {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    color: #FF4328;
+}
+
+.service-style-one .service-content .title h2 {
+    color: #212121;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.service-style-one .service-content p {
+    margin: 0;
+    color: #757575;
+}
+
+.service-style-one .service-content .btn-box {
+    margin-top: 50px;
+}
+
+.service-style-one .service-content .btn-box a.thm-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.service-style-one .service-content .btn-box .phone-btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.service-style-one .service-content .btn-box .phone-btn i {
+    font-size: 24px;
+    border: 2px solid #2884C6;
+    color: #2884C6;
+    line-height: 55px;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.service-style-one .service-right-content {
+    background: #fff;
+    padding: 60px;
+}
+
+.service-style-one .service-right-content .inner {
+    position: relative;
+}
+
+.service-style-one .service-right-content .divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    background: #ebedf4;
+}
+
+.service-style-one .service-right-content .divider.ver {
+    width: 100%;
+    height: 2px;
+}
+
+.service-style-one .service-right-content .single-service-one {
+    text-align: center;
+    padding: 50px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: block;
+}
+
+
+
+.service-style-one .service-right-content .single-service-one:before {
+  background: #FF4328;
+}
+
+
+.printify-icon-t-shirt-with-square:before {
+  content: "\e95d";
+}
+
+.service-style-one .service-right-content .single-service-one h3 {
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.service-style-one .service-right-content .single-service-one i {
+    font-size: 58px;
+    color: #2884C6;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+
+.hvr-bounce-to-bottom:active, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:hover {
+    color: #fff;
+}
+
+.service-style-one .service-right-content .single-service-one:hover i, .service-style-one .service-right-content .single-service-one:hover h3 {
+    color: #fff;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
